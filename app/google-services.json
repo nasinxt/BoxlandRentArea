@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "17711381675",
+    "firebase_url": "https://boxland-dd894.firebaseio.com",
+    "project_id": "boxland-dd894",
+    "storage_bucket": "boxland-dd894.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17711381675:android:121964d18b547893",
+        "android_client_info": {
+          "package_name": "com.example.nasin.boxlandrentarea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17711381675-2nklp3pdoainklvt03f2tsceijbk9kd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nasin.boxlandrentarea",
+            "certificate_hash": "5b360f0040c93994675cd84f7625a239b725471d"
+          }
+        },
+        {
+          "client_id": "17711381675-gc6rap7tjmsabqifbcvqbh65om712vfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiDZNCLhieWJAG5Wim2xGYW-5P7bL_mH4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17711381675-gc6rap7tjmsabqifbcvqbh65om712vfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

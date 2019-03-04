@@ -1,0 +1,16 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageViewCenterCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/howtobooking"
+        android:scaleType="fitStart"
+        />
+
+
+
+</ScrollView>

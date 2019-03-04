@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <TableRow>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_phone_number"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="083-762-6633"
+                android:id="@+id/contactPhone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_facebook"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://www.facebook.com/BoxlandPlaza/"
+                android:id="@+id/contactFacebook"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_mail"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sahapiriyar@gmail.com"
+                android:id="@+id/contactEmail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

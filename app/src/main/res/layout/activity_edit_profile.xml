@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityClass.EditProfile.EditProfile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.sonicodetsu.usersystemtest.account">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+                <!-- TODO: Update blank fragment layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimary"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/gradientbackgroud"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="แก้ไขข้อมูลส่วนตัว"
+                                    android:textColor="#fff"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="80dp"
+                                    />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_logout"
+                                    android:layout_marginLeft="50dp"
+                                    android:id="@+id/logoutBtnE"
+                                    />
+
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:layout_margin="5dp"
+                                android:layout_width="250dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/editprofile" />
+
+                        </LinearLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        >
+
+
+                        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="1"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+
+                                >
+
+                                <ImageView
+                                    android:src="@drawable/ic_id_card"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text=" "
+                                    android:layout_margin="1dp"
+                                    android:id="@+id/idcardProfileE"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/border"
+                                    android:maxLength="13"
+                                    android:inputType="number"
+                                    />
+                                />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+
+                                >
+
+                                <ImageView
+                                    android:src="@drawable/ic_id"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text=""
+                                    android:background="@drawable/border"
+                                    android:layout_margin="1dp"
+                                    android:id="@+id/fullnameProfileE"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    />
+
+
+                                />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                >
+
+                                <ImageView
+                                    android:src="@drawable/ic_phone_number"
+                                    android:layout_width="50dp"
+                                    android:layout_margin="5dp"
+                                    android:layout_height="50dp"
+                                    />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text=" "
+                                    android:layout_margin="1dp"
+                                    android:id="@+id/phoneNumberProfireE"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/border"
+                                    android:maxLength="10"
+                                    android:inputType="number"
+                                    />
+
+
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                >
+
+                                <ImageView
+                                    android:src="@drawable/ic_mail01"
+                                    android:layout_width="50dp"
+                                    android:layout_margin="5dp"
+                                    android:layout_height="50dp"
+                                    />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text=" "
+                                    android:layout_margin="1dp"
+                                    android:id="@+id/emailProfileE"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/border"
+
+                                    />
+
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                >
+
+                                <ImageView
+                                    android:src="@drawable/ic_gender"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    />
+
+                                <Spinner
+                                    android:layout_width="270dp"
+                                    android:layout_height="48dp"
+                                    android:id="@+id/genderProfileE"
+
+                                    >
+
+                                </Spinner>
+
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                >
+
+                                <ImageView
+                                    android:src="@drawable/ic_store"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text=" "
+                                    android:layout_margin="1dp"
+                                    android:id="@+id/storenameProfileE"
+                                    android:layout_column="1"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/border"
+                                    />
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                >
+
+                                <ImageView
+                                    android:src="@drawable/ic_shopping_store"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text=""
+                                    android:layout_margin="1dp"
+                                    android:id="@+id/storeDetailE"
+                                    android:layout_column="0"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/border"
+                                    />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                >
+
+                                <ImageView
+                                    android:src="@drawable/ic_house"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text=""
+                                    android:layout_margin="1dp"
+                                    android:id="@+id/addressProfileE"
+                                    android:layout_column="0"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/border"
+                                    />
+
+                            </TableRow>
+
+
+
+
+                        </TableLayout>
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/buttonstyle"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ยกเลิก"
+                        android:id="@+id/cancelBtn"
+                        />
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/buttonstyle"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="บันทึก"
+                        android:id="@+id/saveProfileBtn"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

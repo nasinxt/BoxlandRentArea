@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityClass.Register.Register2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="35dp"
+                android:background="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/rectangle_non"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:textColor="@color/colorPrimary"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:padding="5dp"
+
+                />
+
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="#FFF"
+                android:text="2"
+                android:background="@drawable/rectangle"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="@color/colorPrimary"
+                android:text="3"
+                android:background="@drawable/rectangle_non"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ข้อมูลร้าน"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อร้าน"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/storename"
+            android:background="@drawable/border"
+            android:padding="16dp"
+            android:textColor="@color/colorPrimary"
+            android:hint="ชื่อร้าน"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รายละเอียดร้านจำหน่ายสินค้า"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/storeDetail"
+            android:background="@drawable/border"
+            android:padding="16dp"
+            android:textColor="@color/colorPrimary"
+            android:hint="รายละเอียดร้านจำหน่ายสินค้า"
+            />
+
+
+
+
+
+        <Button
+            android:background="@drawable/rectangle"
+            android:textColor="#FFF"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:text="ต่อไป"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/next"
+            />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

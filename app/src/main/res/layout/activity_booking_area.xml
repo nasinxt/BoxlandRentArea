@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityClass.BookingArea.BookingArea">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundcolor"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="จองพื้นที่จำหน่ายสินค้า"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="350dp" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pagerBooking"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicatorBooking"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:padding="10dip"
+                app:centered="true"
+                app:fillColor="@color/white"
+                app:pageColor="@color/bluelight"
+                app:snap="false" />
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="รูปพื้นที่"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text="ชื่อพื้นที่"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/areaNameBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="ประเภทการจำหน่ายสินค้า" />
+
+
+                <TextView
+                    android:id="@+id/areaTypeBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ขนาดพื้นที่"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/areaSizeBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="รายละเอียด" />
+
+
+                <TextView
+                    android:id="@+id/areaDetailBooking"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="ราคาเช่า" />
+
+
+                <TextView
+                    android:id="@+id/areaDepositBooking"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="ค่ามัดจำ" />
+
+
+                <TextView
+                    android:id="@+id/areaPriceBooking"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="สถานะ" />
+
+
+                <TextView
+                    android:id="@+id/areaStatusBooking"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+
+                    android:text="" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/bookingBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="จองพื้นที่"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonstyle"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

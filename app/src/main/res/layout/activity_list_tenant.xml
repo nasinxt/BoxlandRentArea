@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".ActivityClass.ListTenant.ListTenant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="ค้นหารายชื่อผู้ประกอบการค้า"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+
+            />
+
+        <EditText
+            android:id="@+id/searchTenantBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="ค้นหารายชื่อผู้ประกอบการค้า" />
+
+        <Button
+            android:id="@+id/searchTeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/buttonstyle"
+            android:text="ค้นหา"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="ผลการค้นหา"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:id="@+id/TenantResultLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/SearchTenantResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

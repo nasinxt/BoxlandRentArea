@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".ActivityClass.ConfirmPayment.ConfirmPayment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="การยืนยันการชำระเงิน"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+
+            />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text="หมายเลขจอง"                android:textColor="@color/white"
+
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/bookingIdR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""                android:textColor="@color/white"
+
+                    android:textSize="18dp" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ชื่อผู้จอง"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tenantNameReceipt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""                android:textColor="@color/white"
+
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="เบอร์โทร"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tenantPhoneReceipt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ชื่อพื้นที่"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/areanameReceipt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="วันที่ทำการจอง"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/bookingDateR"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text=" "
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="สถานะการชำระเงิน"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/bookingStatusR"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="กำหนดการชำระเงิน"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/paydateR"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ค่ามัดจำ"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/areaDepositReceipt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="หลักฐานการจำระเงิน"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/conPicUpload"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_upload"
+                    />
+            </TableRow>
+
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/cancelConfirmBtn"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/buttonstyle"
+                    android:text="ยกเลิก"
+                    android:textColor="#fff" />
+
+
+                <Button
+                    android:id="@+id/sendRecipt"
+                    android:layout_width="130dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/buttonstyle"
+                    android:text="ส่งหลักฐาน"
+                    android:textColor="#fff"
+
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/imageBefore"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

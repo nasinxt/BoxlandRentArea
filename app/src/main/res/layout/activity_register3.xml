@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityClass.Register.Register3"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="35dp"
+                android:background="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/rectangle_non"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:textColor="@color/colorPrimary"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:padding="5dp"
+
+                />
+
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="@color/colorPrimary"
+                android:text="2"
+                android:background="@drawable/rectangle_non"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:text="3"
+                android:textColor="#FFF"
+                android:background="@drawable/rectangle"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ข้อมูลสมาชิก"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อผู้ใช้"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/username"
+            android:background="@drawable/border"
+            android:padding="16dp"
+            android:maxLength="16"
+            android:hint="ชื่อผู้ใช้"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รหัสผ่าน"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+
+
+            />
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/password"
+            android:background="@drawable/border"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:hint="รหัสผ่าน"
+            android:maxLength="16"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ยืนยันรหัสผ่าน"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/passwordConfirm"
+            android:background="@drawable/border"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:hint="ยืนยันรหัสผ่าน"
+            android:maxLength="16"
+
+            />
+
+
+        <Button
+            android:background="@drawable/rectangle"
+            android:textColor="#FFF"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="สมัครสมาชิก"
+            android:id="@+id/registerBTN"
+            />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</ScrollView>

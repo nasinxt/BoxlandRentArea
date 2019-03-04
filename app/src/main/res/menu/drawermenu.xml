@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homemMenu" android:title="หน้าหลัก" android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/loginMenu" android:title="เข้าสู่ระบบ" android:icon="@drawable/ic_login"/>
+    <item android:id="@+id/searchMenu" android:title="ค้นหา" android:icon="@drawable/ic_exit"/>
+
+
+</menu>

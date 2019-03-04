@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nasin.boxlandrentarea">
+
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Class.GlobalClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_cart"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".ActivityClass.home" />
+        <activity android:name=".ActivityClass.Register.Register" />
+        <activity android:name=".ActivityClass.Register.Register2" />
+        <activity android:name=".ActivityClass.Register.Register3" />
+        <activity
+            android:name=".ActivityClass.Login.Login"
+            android:parentActivityName=".ActivityClass.home" />
+        <activity
+            android:name=".ActivityClass.EditProfile.EditProfile"
+            android:parentActivityName=".ActivityClass.home" />
+        <activity android:name=".ActivityClass.AddArea.AddRentArea" />
+        <activity android:name=".ActivityClass.adminHome" />
+
+        <activity
+            android:name=".ActivityClass.BrowseRentArea.BrowseRentArea"
+            android:parentActivityName=".ActivityClass.home" />
+
+        <activity
+            android:name=".ActivityClass.ViewRentAreaDetail.ViewRentAreaDetail"
+            android:parentActivityName=".ActivityClass.BrowseRentArea.BrowseRentArea" />
+
+        <activity
+            android:name=".ActivityClass.BookingArea.BookingArea"
+            android:parentActivityName=".ActivityClass.BrowseRentArea.BrowseRentArea" />
+
+        <activity android:name=".ActivityClass.SaveInvoice.SaveInvoice" />
+
+        <activity android:name=".ActivityClass.ListBookingArea.ListBookingArea"
+            android:parentActivityName=".ActivityClass.home"
+            />
+        <activity android:name=".ActivityClass.ConfirmPayment.ConfirmPayment"
+            android:parentActivityName=".ActivityClass.ListBookingArea.ListBookingArea"
+            />
+        <activity
+            android:name=".ActivityClass.ListRentArea.ListRentArea"
+            android:parentActivityName=".ActivityClass.adminHome"
+            />
+        '
+        <activity
+            android:name=".ActivityClass.ViewAreaDetail.ViewAreaDetail"
+            android:parentActivityName=".ActivityClass.ListRentArea.ListRentArea"
+
+            />
+        <activity
+            android:name=".ActivityClass.EditAreaDetail.EditAreaDetail"
+            android:parentActivityName=".ActivityClass.ViewAreaDetail.ViewAreaDetail" />
+        <activity
+            android:name=".ActivityClass.ListTenant.ListTenant"
+            android:parentActivityName=".ActivityClass.adminHome" />
+        <activity
+            android:name=".ActivityClass.ViewTenantDetail.ViewTenantDetail"
+            android:parentActivityName=".ActivityClass.ListTenant.ListTenant" />
+        <activity
+            android:name=".ActivityClass.EditTenantDetail.EditTenantDetail"
+            android:parentActivityName=".ActivityClass.ViewTenantDetail.ViewTenantDetail" />
+
+        <activity android:name=".ActivityClass.ListNewPayment.ListNewPayment"
+            android:parentActivityName=".ActivityClass.adminHome"
+            />
+        <activity
+            android:name=".ActivityClass.ApprovePayment.ApprovePayment"
+            android:parentActivityName=".ActivityClass.ViewAreaDetail.ViewAreaDetail" />
+        <activity android:name=".ActivityClass.SendReceipt.SendReceipt" />
+        <activity
+            android:name=".ActivityClass.EditAreaDetail.EditPicArea"
+            android:parentActivityName=".ActivityClass.ViewAreaDetail.ViewAreaDetail" />
+
+        <activity android:name=".ActivityClass.ListNewPayment.ListOldPayment"></activity>
+        <receiver android:name=".ActivityClass.BookingArea.AutoCancelReceiver"/>
+
+
+    </application>
+
+</manifest>

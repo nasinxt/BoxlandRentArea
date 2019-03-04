@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/booking" android:title="รายการจอง" android:icon="@drawable/ic_shopping_cart"/>
+    <item android:id="@+id/search" android:title="ค้นหา" android:icon="@drawable/ic_loupe"/>
+    <item android:id="@+id/account" android:title="ข้อมูลส่วนตัว" android:icon="@drawable/ic_round_account_button_with_user_inside"/>
+
+</menu>
